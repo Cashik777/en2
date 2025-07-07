@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Mastery | Премиальное обучение английскому для амбициозных</title>
+    <title>English Harmony | Премиальное обучение английскому</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1a2a6c;
-            --secondary: #b21f1f;
-            --accent: #fdbb2d;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --success: #28a745;
-            --warning: #ffc107;
+            --primary: #6D8B74;
+            --secondary: #D0C9C0;
+            --accent: #A7C4BC;
+            --light: #F5F5F5;
+            --dark: #5F7161;
+            --success: #8DB596;
+            --warning: #EFD345;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
@@ -29,7 +29,7 @@
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--light);
-            color: var(--dark);
+            color: #4A4A4A;
             line-height: 1.7;
             overflow-x: hidden;
         }
@@ -43,7 +43,7 @@
         
         /* Header */
         header {
-            background: rgba(26, 42, 108, 0.9);
+            background: rgba(109, 139, 116, 0.95);
             color: white;
             padding: 20px 0;
             position: fixed;
@@ -52,11 +52,12 @@
             z-index: 1000;
             backdrop-filter: blur(10px);
             transition: var(--transition);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         header.scrolled {
             padding: 15px 0;
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
         }
         
         .header-container {
@@ -80,9 +81,7 @@
             font-size: 26px;
             font-weight: 700;
             margin-bottom: 5px;
-            background: linear-gradient(to right, #fdbb2d, #b21f1f);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
         }
         
         .logo-text p {
@@ -90,6 +89,7 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             opacity: 0.8;
+            color: var(--secondary);
         }
         
         nav ul {
@@ -143,7 +143,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(26, 42, 108, 0.85), rgba(178, 31, 31, 0.85)), url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            background: linear-gradient(135deg, rgba(109, 139, 116, 0.9), rgba(167, 196, 188, 0.8)), url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
             height: 100vh;
             min-height: 800px;
             display: flex;
@@ -179,7 +179,7 @@
             margin-bottom: 25px;
             font-weight: 700;
             line-height: 1.2;
-            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             animation: fadeInUp 1s ease;
         }
         
@@ -198,7 +198,7 @@
         
         .btn {
             display: inline-block;
-            background: linear-gradient(45deg, var(--accent), #e44d26);
+            background: linear-gradient(45deg, var(--accent), var(--primary));
             color: white;
             padding: 16px 40px;
             border-radius: 50px;
@@ -208,14 +208,14 @@
             border: none;
             cursor: pointer;
             font-size: 18px;
-            box-shadow: 0 10px 30px rgba(253, 187, 45, 0.3);
+            box-shadow: 0 10px 30px rgba(167, 196, 188, 0.3);
             position: relative;
             overflow: hidden;
         }
         
         .btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(253, 187, 45, 0.4);
+            box-shadow: 0 15px 40px rgba(167, 196, 188, 0.4);
         }
         
         .btn:active {
@@ -255,7 +255,7 @@
         
         /* Counter Section */
         .counter-section {
-            background: linear-gradient(135deg, var(--primary), #4b6cb7);
+            background: linear-gradient(135deg, var(--primary), #8DB596);
             color: white;
             padding: 60px 0;
             margin-top: -1px;
@@ -277,7 +277,7 @@
             font-weight: 700;
             margin-bottom: 10px;
             font-family: 'Playfair Display', serif;
-            color: var(--accent);
+            color: white;
         }
         
         .counter-text {
@@ -298,7 +298,7 @@
         .section-title h2 {
             font-family: 'Playfair Display', serif;
             font-size: 48px;
-            color: var(--primary);
+            color: var(--dark);
             margin-bottom: 20px;
             position: relative;
             display: inline-block;
@@ -309,7 +309,7 @@
             position: absolute;
             width: 80px;
             height: 4px;
-            background: linear-gradient(to right, var(--accent), var(--secondary));
+            background: linear-gradient(to right, var(--accent), var(--primary));
             bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
@@ -333,7 +333,7 @@
             flex: 1;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.05);
             transform: rotate(-3deg);
             transition: var(--transition);
         }
@@ -356,7 +356,7 @@
         .about-text h3 {
             font-family: 'Playfair Display', serif;
             font-size: 36px;
-            color: var(--primary);
+            color: var(--dark);
             margin-bottom: 25px;
             line-height: 1.3;
         }
@@ -380,17 +380,19 @@
             background: white;
             padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
             transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
         
         .feature-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            border-color: var(--accent);
         }
         
         .feature-icon {
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            background: linear-gradient(45deg, var(--primary), var(--accent));
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -445,14 +447,16 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
             transition: var(--transition);
             position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
         
         .program-card:hover {
             transform: translateY(-15px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent);
         }
         
         .program-badge {
@@ -492,7 +496,7 @@
             font-family: 'Playfair Display', serif;
             font-size: 26px;
             margin-bottom: 15px;
-            color: var(--primary);
+            color: var(--dark);
         }
         
         .program-content p {
@@ -512,7 +516,7 @@
         
         .program-price {
             font-weight: 700;
-            color: var(--secondary);
+            color: var(--primary);
             font-size: 24px;
         }
         
@@ -531,7 +535,7 @@
         
         /* Results Section */
         .results {
-            background: linear-gradient(135deg, rgba(26, 42, 108, 0.9), rgba(178, 31, 31, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            background: linear-gradient(135deg, rgba(109, 139, 116, 0.9), rgba(167, 196, 188, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
             color: white;
             text-align: center;
             position: relative;
@@ -544,7 +548,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.2);
         }
         
         .results .section-title h2,
@@ -567,7 +571,7 @@
         }
         
         .result-card {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             padding: 40px 30px;
@@ -577,12 +581,12 @@
         
         .result-card:hover {
             transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.2);
         }
         
         .result-icon {
             font-size: 50px;
-            color: var(--accent);
+            color: white;
             margin-bottom: 20px;
         }
         
@@ -607,15 +611,17 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
             text-align: center;
             transition: var(--transition);
             position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
         
         .teacher-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent);
         }
         
         .teacher-img {
@@ -664,7 +670,7 @@
         }
         
         .teacher-social a:hover {
-            background: var(--secondary);
+            background: var(--primary);
             color: white;
             transform: translateY(-5px);
         }
@@ -677,11 +683,11 @@
             font-family: 'Playfair Display', serif;
             font-size: 24px;
             margin-bottom: 5px;
-            color: var(--primary);
+            color: var(--dark);
         }
         
         .teacher-info p {
-            color: var(--secondary);
+            color: var(--primary);
             font-weight: 600;
             margin-bottom: 15px;
         }
@@ -693,7 +699,7 @@
         }
         
         .teacher-rating {
-            color: var(--accent);
+            color: var(--warning);
             font-size: 18px;
             margin-bottom: 15px;
         }
@@ -714,10 +720,11 @@
             background: white;
             border-radius: 15px;
             padding: 50px;
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
             margin: 20px;
             text-align: center;
             position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
         
         .testimonial-item::before {
@@ -727,7 +734,7 @@
             left: 30px;
             font-family: 'Playfair Display', serif;
             font-size: 100px;
-            color: rgba(26, 42, 108, 0.1);
+            color: rgba(109, 139, 116, 0.1);
             line-height: 1;
         }
         
@@ -758,7 +765,7 @@
         .author-info h4 {
             font-size: 22px;
             margin-bottom: 5px;
-            color: var(--primary);
+            color: var(--dark);
             text-align: left;
         }
         
@@ -770,7 +777,7 @@
         
         /* CTA Section */
         .cta {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
             text-align: center;
             padding: 100px 0;
@@ -819,7 +826,7 @@
             font-family: 'Playfair Display', serif;
             font-size: 32px;
             margin-bottom: 30px;
-            color: var(--primary);
+            color: var(--dark);
         }
         
         .contact-details {
@@ -835,7 +842,7 @@
         .contact-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            background: linear-gradient(45deg, var(--primary), var(--accent));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -861,7 +868,7 @@
         }
         
         .contact-text a:hover {
-            color: var(--secondary);
+            color: var(--primary);
         }
         
         .social-links {
@@ -880,10 +887,11 @@
             border-radius: 50%;
             transition: var(--transition);
             font-size: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
         
         .social-links a:hover {
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            background: linear-gradient(45deg, var(--primary), var(--accent));
             color: white;
             transform: translateY(-5px);
         }
@@ -915,9 +923,9 @@
         .contact-form input:focus,
         .contact-form textarea:focus,
         .contact-form select:focus {
-            border-color: var(--secondary);
+            border-color: var(--accent);
             outline: none;
-            box-shadow: 0 0 0 3px rgba(178, 31, 31, 0.2);
+            box-shadow: 0 0 0 3px rgba(167, 196, 188, 0.2);
         }
         
         .contact-form textarea {
@@ -1006,7 +1014,7 @@
         }
         
         .footer-bottom {
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.2);
             padding: 25px 0;
             text-align: center;
             position: relative;
@@ -1048,7 +1056,7 @@
             position: relative;
             transform: translateY(50px);
             transition: transform 0.3s ease;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
         }
         
         .modal.active .modal-content {
@@ -1066,13 +1074,13 @@
         }
         
         .close-modal:hover {
-            color: var(--secondary);
+            color: var(--primary);
             transform: rotate(90deg);
         }
         
         .modal h2 {
             font-family: 'Playfair Display', serif;
-            color: var(--primary);
+            color: var(--dark);
             margin-bottom: 20px;
             font-size: 32px;
         }
@@ -1080,6 +1088,51 @@
         .modal p {
             margin-bottom: 30px;
             color: #555;
+        }
+        
+        /* Scarcity Banner */
+        .scarcity-banner {
+            background: var(--accent);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-weight: 600;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1001;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Guarantee Badge */
+        .guarantee-badge {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 14px;
+            box-shadow: 0 5px 15px rgba(141, 181, 150, 0.3);
+        }
+        
+        /* Price Slash */
+        .price-slash {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .price-slash::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -5%;
+            width: 110%;
+            height: 2px;
+            background: var(--primary);
+            transform: rotate(-15deg);
         }
         
         /* Responsive */
@@ -1231,60 +1284,16 @@
             }
         }
         
-        /* Special Elements */
-        .scarcity-banner {
-            background: var(--accent);
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            font-weight: 600;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1001;
-            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
-            animation: pulse 2s infinite;
-        }
-        
         @keyframes pulse {
             0% {
                 background-color: var(--accent);
             }
             50% {
-                background-color: #e44d26;
+                background-color: var(--primary);
             }
             100% {
                 background-color: var(--accent);
             }
-        }
-        
-        .guarantee-badge {
-            display: inline-block;
-            background: var(--success);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            font-size: 14px;
-            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
-        }
-        
-        .price-slash {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .price-slash::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: -5%;
-            width: 110%;
-            height: 2px;
-            background: var(--secondary);
-            transform: rotate(-15deg);
         }
     </style>
 </head>
@@ -1292,7 +1301,7 @@
     <!-- Scarcity Banner -->
     <div class="scarcity-banner" id="scarcityBanner">
         <div class="container">
-            <span id="bannerText">🔥 Только сегодня! Скидка 30% на все курсы! Осталось <span id="countdown">23:59:59</span> 🔥</span>
+            <span id="bannerText">✨ Только сегодня! Скидка 30% на все курсы! Осталось <span id="countdown">23:59:59</span> ✨</span>
         </div>
     </div>
 
@@ -1300,10 +1309,10 @@
     <header id="header">
         <div class="container header-container">
             <div class="logo">
-                <img src="https://via.placeholder.com/50x50" alt="English Mastery Logo">
+                <img src="https://via.placeholder.com/50x50" alt="English Harmony Logo">
                 <div class="logo-text">
-                    <h1>English Mastery</h1>
-                    <p>Премиальное обучение английскому</p>
+                    <h1>English Harmony</h1>
+                    <p>Премиальное обучение</p>
                 </div>
             </div>
             <nav>
@@ -1326,8 +1335,8 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h2>Английский, который открывает двери</h2>
-                <p>Заговорите свободно на английском уже через 3 месяца по нашей уникальной методике, доказавшей свою эффективность для более чем 10,000 студентов</p>
+                <h2>Английский, который вдохновляет</h2>
+                <p>Откройте для себя радость свободного общения на английском с нашей мягкой и естественной методикой обучения</p>
                 <div class="hero-buttons">
                     <a href="#programs" class="btn" id="ctaBtn">Выбрать программу</a>
                     <a href="#contact" class="btn btn-outline">Бесплатный урок</a>
@@ -1367,8 +1376,8 @@
     <section class="section" id="about">
         <div class="container">
             <div class="section-title">
-                <h2>Почему наша методика работает</h2>
-                <p>Мы используем научно доказанные подходы к обучению языкам, которые активируют естественные механизмы запоминания</p>
+                <h2>Наша философия обучения</h2>
+                <p>Мы создали среду, где английский усваивается естественно и с удовольствием</p>
             </div>
             <div class="about-content">
                 <div class="about-img">
@@ -1378,17 +1387,17 @@
                     <div class="guarantee-badge">
                         <i class="fas fa-check-circle"></i> Гарантия результата
                     </div>
-                    <h3>Вы заговорите на английском, даже если до этого не могли выучить его годами</h3>
-                    <p>Наша методика основана на последних исследованиях нейролингвистики и когнитивной психологии. Мы не просто учим слова и правила - мы создаем естественную языковую среду, в которой ваш мозг начинает воспринимать английский как родной.</p>
-                    <p>В отличие от традиционных методов, мы фокусируемся на практическом использовании языка с первого занятия, что в 3 раза ускоряет процесс обучения.</p>
+                    <h3>Обучение должно приносить радость и вдохновение</h3>
+                    <p>Наша методика основана на принципах естественного усвоения языка. Мы создаем атмосферу доверия и комфорта, где ошибки - это часть процесса, а не повод для стресса.</p>
+                    <p>Вместо зубрежки - живое общение, вместо страха - любопытство, вместо давления - поддержка. Так английский становится частью вашей жизни, а не временной обязанностью.</p>
                     <div class="features">
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <i class="fas fa-brain"></i>
+                                <i class="fas fa-heart"></i>
                             </div>
                             <div class="feature-text">
-                                <h4>Нейроадаптация</h4>
-                                <p>Методика, которая перестраивает ваше мышление на английский лад</p>
+                                <h4>Комфортная среда</h4>
+                                <p>Уютные классы и доброжелательная атмосфера без стресса</p>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -1396,26 +1405,26 @@
                                 <i class="fas fa-comments"></i>
                             </div>
                             <div class="feature-text">
-                                <h4>Практика с 1-го дня</h4>
-                                <p>80% времени занятия - это живое общение, а не скучная теория</p>
+                                <h4>Естественное общение</h4>
+                                <p>80% времени занятия - это практика в реальных ситуациях</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <i class="fas fa-user-tie"></i>
+                                <i class="fas fa-seedling"></i>
                             </div>
                             <div class="feature-text">
-                                <h4>Персональный коучинг</h4>
-                                <p>Каждый студент получает индивидуальную программу развития</p>
+                                <h4>Постепенное развитие</h4>
+                                <p>Программа, которая растет вместе с вашими навыками</p>
                             </div>
                         </div>
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-smile"></i>
                             </div>
                             <div class="feature-text">
-                                <h4>Измеримый прогресс</h4>
-                                <p>Четкие критерии оценки ваших успехов после каждого занятия</p>
+                                <h4>Удовольствие от процесса</h4>
+                                <p>Занятия, которые вы ждете с нетерпением</p>
                             </div>
                         </div>
                     </div>
@@ -1438,8 +1447,8 @@
                         <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Разговорный английский">
                     </div>
                     <div class="program-content">
-                        <h3>Английский для общения</h3>
-                        <p>Программа для тех, кто хочет свободно общаться в путешествиях и повседневной жизни. Убираем языковой барьер и учимся говорить естественно.</p>
+                        <h3>Английский для жизни</h3>
+                        <p>Программа для тех, кто хочет свободно общаться в путешествиях и повседневных ситуациях. Учимся с удовольствием и без стресса.</p>
                         <div class="program-meta">
                             <span class="program-price">$150 <span class="price-slash">$220</span></span>
                             <span class="program-duration">3 месяца</span>
@@ -1453,8 +1462,8 @@
                         <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Деловой английский">
                     </div>
                     <div class="program-content">
-                        <h3>Бизнес английский</h3>
-                        <p>Для профессионалов, которые хотят продвигаться по карьере в международных компаниях. Переговоры, презентации, деловая переписка.</p>
+                        <h3>Английский для работы</h3>
+                        <p>Для тех, кто хочет уверенно чувствовать себя в профессиональной среде. Деловые встречи, переписка и презентации без стресса.</p>
                         <div class="program-meta">
                             <span class="program-price">$250 <span class="price-slash">$350</span></span>
                             <span class="program-duration">4 месяца</span>
@@ -1468,8 +1477,8 @@
                         <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Подготовка к экзаменам">
                     </div>
                     <div class="program-content">
-                        <h3>Подготовка к IELTS/TOEFL</h3>
-                        <p>Для тех, кто планирует учебу или работу за рубежом. Максимальный балл за минимальное время с нашими стратегиями подготовки.</p>
+                        <h3>Подготовка к экзаменам</h3>
+                        <p>Эффективная подготовка к IELTS и TOEFL с заботой о вашем психологическом комфорте. Максимальный результат без перегрузок.</p>
                         <div class="program-meta">
                             <span class="program-price">$300 <span class="price-slash">$450</span></span>
                             <span class="program-duration">2 месяца</span>
@@ -1485,30 +1494,30 @@
     <section class="section results" id="results">
         <div class="container">
             <div class="section-title">
-                <h2>Каких результатов вы достигнете</h2>
-                <p>Наши студенты отмечают значительные изменения уже после первого месяца обучения</p>
+                <h2>Ваши перемены</h2>
+                <p>Что изменится в вашей жизни после нашего курса</p>
             </div>
             <div class="results-grid">
                 <div class="result-card">
                     <div class="result-icon">
                         <i class="fas fa-comment-dots"></i>
                     </div>
-                    <h3>Свободное общение</h3>
-                    <p>Преодолейте языковой барьер и сможете поддерживать беседу на любые темы без страха ошибиться</p>
+                    <h3>Свобода общения</h3>
+                    <p>Вы забудете, что такое языковой барьер, и начнете получать удовольствие от разговоров на английском</p>
                 </div>
                 <div class="result-card">
                     <div class="result-icon">
-                        <i class="fas fa-headphones"></i>
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <h3>Понимание на слух</h3>
-                    <p>Начнете понимать носителей языка в фильмах, песнях и реальной речи без субтитров</p>
+                    <h3>Новые возможности</h3>
+                    <p>Путешествия, работа и общение без границ станут вашей новой реальностью</p>
                 </div>
                 <div class="result-card">
                     <div class="result-icon">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-user-check"></i>
                     </div>
-                    <h3>Карьерный рост</h3>
-                    <p>Получите доступ к высокооплачиваемым позициям в международных компаниях</p>
+                    <h3>Уверенность в себе</h3>
+                    <p>Вы удивитесь, насколько легко и приятно может быть учиться, когда вас поддерживают</p>
                 </div>
             </div>
         </div>
@@ -1519,7 +1528,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Наши преподаватели</h2>
-                <p>Профессионалы с международным опытом, которые вдохновляют студентов на выдающиеся результаты</p>
+                <p>Профессионалы, которые создают атмосферу доверия и вдохновения</p>
             </div>
             <div class="teachers-grid">
                 <div class="teacher-card">
@@ -1541,7 +1550,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="bio">15 лет преподавания в США и Великобритании. Специализируется на преодолении языкового барьера и постановке естественного произношения.</p>
+                        <p class="bio">"Моя цель - чтобы каждый студент почувствовал радость от свободного общения. Английский - это не барьер, а мост к новым возможностям."</p>
                         <a href="#contact" class="btn" style="width: 100%; text-align: center;">Записаться к Анне</a>
                     </div>
                 </div>
@@ -1564,7 +1573,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <p class="bio">Из Лондона, 10 лет преподает бизнес-английский для топ-менеджеров. Эксперт по деловой коммуникации и переговорам на английском.</p>
+                        <p class="bio">"Learning should be fun! Я помогу вам преодолеть страх ошибок и начать говорить свободно и уверенно."</p>
                         <a href="#contact" class="btn" style="width: 100%; text-align: center;">Записаться к Дэвиду</a>
                     </div>
                 </div>
@@ -1579,7 +1588,7 @@
                     </div>
                     <div class="teacher-info">
                         <h3>Ольга Петрова</h3>
-                        <p>Эксперт по подготовке к экзаменам</p>
+                        <p>Эксперт по подготовке</p>
                         <div class="teacher-rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1587,7 +1596,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="bio">Помогла более 200 студентам получить высшие баллы на IELTS и TOEFL. Знает все лайфхаки успешной сдачи международных экзаменов.</p>
+                        <p class="bio">"Экзамены - это не страшно, когда знаешь как к ним готовиться. Я научу вас стратегиям, которые действительно работают."</p>
                         <a href="#contact" class="btn" style="width: 100%; text-align: center;">Записаться к Ольге</a>
                     </div>
                 </div>
@@ -1599,19 +1608,19 @@
     <section class="section testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Истории успеха</h2>
-                <p>Что говорят наши студенты после прохождения курсов</p>
+                <h2>Истории наших студентов</h2>
+                <p>Как изменилась их жизнь после курса</p>
             </div>
             <div class="testimonials-slider">
                 <div class="testimonial-item">
                     <div class="testimonial-text">
-                        <p>После 10 лет безуспешных попыток выучить английский, я заговорила уже на 3-ем занятии! Методика действительно работает - мозг начинает думать на английском. Сейчас свободно общаюсь с клиентами из Европы, что открыло для меня новые карьерные возможности.</p>
+                        <p>Я всегда боялась говорить на английском, пока не пришла в English Harmony. Здесь такая теплая атмосфера, что страх ушел сам собой. Через 3 месяца я поехала в отпуск одна и впервые в жизни свободно общалась с людьми! Это невероятное чувство.</p>
                     </div>
                     <div class="testimonial-author">
                         <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Анна Ковалева">
                         <div class="author-info">
                             <h4>Анна Ковалева</h4>
-                            <p>Маркетолог, прошла курс "Бизнес английский"</p>
+                            <p>Прошла курс "Английский для жизни"</p>
                         </div>
                     </div>
                 </div>
@@ -1622,8 +1631,8 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Готовы изменить свою жизнь с английским?</h2>
-            <p>Оставьте заявку прямо сейчас и получите бесплатный пробный урок с диагностикой вашего уровня и персональными рекомендациями</p>
+            <h2>Готовы начать с удовольствием?</h2>
+            <p>Запишитесь на бесплатный пробный урок и почувствуйте, каким может быть обучение без стресса</p>
             <a href="#contact" class="btn">Записаться на бесплатный урок</a>
         </div>
     </section>
@@ -1633,7 +1642,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Свяжитесь с нами</h2>
-                <p>Мы ответим на все ваши вопросы и поможем подобрать оптимальную программу</p>
+                <p>Мы с радостью ответим на все ваши вопросы</p>
             </div>
             <div class="contact-container">
                 <div class="contact-info">
@@ -1663,7 +1672,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>Email</h4>
-                                <p><a href="mailto:info@englishmastery.com">info@englishmastery.com</a></p>
+                                <p><a href="mailto:info@englishharmony.com">info@englishharmony.com</a></p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -1702,9 +1711,9 @@
                             <label for="program">Интересующая программа</label>
                             <select id="program" name="program">
                                 <option value="">Выберите программу</option>
-                                <option value="communication">Английский для общения</option>
-                                <option value="business">Бизнес английский</option>
-                                <option value="ielts">Подготовка к IELTS/TOEFL</option>
+                                <option value="communication">Английский для жизни</option>
+                                <option value="business">Английский для работы</option>
+                                <option value="ielts">Подготовка к экзаменам</option>
                                 <option value="notsure">Не знаю, нужна консультация</option>
                             </select>
                         </div>
@@ -1724,8 +1733,8 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-col">
-                    <h3>English Mastery</h3>
-                    <p>Премиальная школа английского языка, где вы действительно заговорите свободно, независимо от вашего текущего уровня.</p>
+                    <h3>English Harmony</h3>
+                    <p>Школа английского языка, где обучение становится удовольствием, а результаты - неизбежны.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -1735,9 +1744,9 @@
                 <div class="footer-col">
                     <h3>Программы</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Разговорный английский</a></li>
-                        <li><a href="#">Бизнес английский</a></li>
-                        <li><a href="#">Подготовка к IELTS/TOEFL</a></li>
+                        <li><a href="#">Английский для жизни</a></li>
+                        <li><a href="#">Английский для работы</a></li>
+                        <li><a href="#">Подготовка к экзаменам</a></li>
                         <li><a href="#">Индивидуальные занятия</a></li>
                         <li><a href="#">Корпоративное обучение</a></li>
                     </ul>
@@ -1764,7 +1773,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2023 English Mastery. Все права защищены. <a href="#" style="color: var(--accent);">Политика конфиденциальности</a></p>
+                <p>&copy; 2023 English Harmony. Все права защищены. <a href="#" style="color: var(--accent);">Политика конфиденциальности</a></p>
             </div>
         </div>
     </footer>
@@ -1775,7 +1784,7 @@
             <span class="close-modal" id="closeModal">&times;</span>
             <h2>Спасибо за вашу заявку!</h2>
             <p>Наш менеджер свяжется с вами в течение 15 минут, чтобы обсудить детали и подобрать оптимальную программу обучения.</p>
-            <p>А пока вы можете скачать наш <strong>бесплатный гайд "10 секретов быстрого изучения английского"</strong>, который мы отправили на вашу почту.</p>
+            <p>А пока вы можете скачать наш <strong>бесплатный гайд "Как учить английский с удовольствием"</strong>, который мы отправили на вашу почту.</p>
             <a href="#" class="btn" style="margin-top: 20px; display: inline-block;">Хорошо, жду звонка</a>
         </div>
     </div>
@@ -1905,7 +1914,7 @@
                 
                 if (timeLeft < 0) {
                     clearInterval(countdownInterval);
-                    document.getElementById('bannerText').textContent = "🔥 Акция завершена! Но мы подготовили для вас специальное предложение 🔥";
+                    document.getElementById('bannerText').textContent = "✨ Мы подготовили для вас специальное предложение! ✨";
                 }
             };
             
@@ -1918,12 +1927,12 @@
         if (ctaBtn) {
             ctaBtn.addEventListener('mouseenter', () => {
                 ctaBtn.style.transform = 'translateY(-5px) scale(1.05)';
-                ctaBtn.style.boxShadow = '0 15px 40px rgba(253, 187, 45, 0.4)';
+                ctaBtn.style.boxShadow = '0 15px 40px rgba(167, 196, 188, 0.4)';
             });
             
             ctaBtn.addEventListener('mouseleave', () => {
                 ctaBtn.style.transform = 'translateY(0) scale(1)';
-                ctaBtn.style.boxShadow = '0 10px 30px rgba(253, 187, 45, 0.3)';
+                ctaBtn.style.boxShadow = '0 10px 30px rgba(167, 196, 188, 0.3)';
             });
         }
         
